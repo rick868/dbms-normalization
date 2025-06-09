@@ -17,17 +17,24 @@ To eliminate unwanted charasteristics like
 
 #### Features of Database Normalization
 <li>
-  Elimination of Data Redundancy: Data redundancy refers to the repetition of data in different parts of the database. Normalization helps in reducing or eliminating this redundancy, which can improve the efficiency and consistency of the database.
-  
-  Ensuring Data Consistency:  By eliminating redundancy, normalization helps in preventing inconsistencies and contradictions that can arise.
-  
-  Improved Database Design: By organizing the data in a structured and systematic way, normalization makes it easier to design and maintain the database.
-  
-  Avoiding Update Anomalies: Normalization ensures that each table contains only one type of data and that the relationships between the tables are clearly defined, which helps in avoiding such anomalies.
-</li>
+Elimination of Data Redundancy: Data redundancy refers to the repetition of data in different parts of the database. Normalization helps in reducing or eliminating this redundancy, which can improve the efficiency and consistency of the database.</li>
+<li>Ensuring Data Consistency:  By eliminating redundancy, normalization helps in preventing inconsistencies and contradictions that can arise.</li>
+<li> Improved Database Design: By organizing the data in a structured and systematic way, normalization makes it easier to design and maintain the database.</li>
+<li> Avoiding Update Anomalies: Normalization ensures that each table contains only one type of data and that the relationships between the tables are clearly defined, which helps in avoiding such anomalies.</li>
+
 
 # NORMAL FORMS
 **Normal Forms** are different stages of normalization, and each stage imposes certain rules to improve the structure and performance of a database.
 
 ### Types of Normal Forms
+### 1. First Normal Form (1NF): Eliminating Duplicate Records
+  A relation is in first normal form if every attribute in that relation is <b>single-valued attribute</b>. 
+  A table is in 1NF if it satisfies the following conditions:
+  <li>All columns contain atomic values (i.e., indivisible values).</li>
+  <li>Each row is unique (i.e., no duplicate rows).</li>
+  <li>Each column has a unique name.</li>
+  <li>The order in which data is stored does not matter.</li>
 
+### 2. Second Normal Form (2NF): Eliminating Partial Dependency
+  A relation that is in First Normal Form and every non-primary-key attribute is fully functionally dependent on the primary key, then the relation is in <b>Second Normal Form (2NF)</b>.
+  
