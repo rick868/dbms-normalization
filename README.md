@@ -37,4 +37,7 @@ Elimination of Data Redundancy: Data redundancy refers to the repetition of data
 
 ### 2. Second Normal Form (2NF): Eliminating Partial Dependency
   A relation that is in First Normal Form and every non-primary-key attribute is fully functionally dependent on the primary key, then the relation is in <b>Second Normal Form (2NF)</b>.
-  
+  A relation is in 2NF if it satisfies the conditions of 1NF and additionally. **No partial dependency** exists, meaning every **non-prime attribute (non-key attribute)** must depend on the **entire primary key**, not just a part of it.
+
+###  3. Third Normal Form (3NF): Eliminating Transitive Dependency
+  A relation is in 3NF if it satisfies 2NF and additionally, there are **no transitive dependencies**. In simpler terms, **non-prime attributes** should not depend on other **non-prime**attributes.
